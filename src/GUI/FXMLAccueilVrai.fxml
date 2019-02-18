@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPopup?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane onMouseDragged="#Dragged" onMousePressed="#Pressed" prefHeight="797.0" prefWidth="1349.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FXMLAccueilVraiController">
+   <children>
+      <JFXPopup fx:id="popupUser" />
+      <JFXPopup fx:id="popup" />
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="796.0" prefWidth="1349.0">
+         <children>
+            <VBox layoutX="203.0" prefHeight="796.0" prefWidth="1349.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane prefHeight="44.0" prefWidth="1349.0" style="-fx-background-color: #CDCDCD;">
+                     <children>
+                        <Label layoutX="1007.0" layoutY="5.0" onMouseClicked="#Load_Horaire" prefHeight="33.0" prefWidth="130.0" text="Horaire Docteur" textFill="#962928">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                           <graphic>
+                              <MaterialDesignIconView fill="#727272" glyphName="TIMETABLE" size="15" />
+                           </graphic>
+                        </Label>
+                        <Label layoutX="902.0" layoutY="5.0" onMouseClicked="#Load_Serveur" prefHeight="33.0" prefWidth="96.0" styleClass="btn" stylesheets="@../MyCss/CssLogin.css" text="Serveur" textFill="#962928">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="12.0" />
+                           </padding>
+                           <graphic>
+                              <MaterialDesignIconView fill="#727272" glyphName="SERVER" size="15" />
+                           </graphic>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="6.0" prefHeight="33.0" prefWidth="121.0" text="Accueil" textFill="#a5a5a5">
+                           <font>
+                              <Font name="Century" size="16.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#727272" glyphName="HOME" size="20" />
+                           </graphic>
+                        </Label>
+                        <JFXButton fx:id="BtnDeconnexion" alignment="BASELINE_CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="1185.0" layoutY="6.0" onAction="#Load_Deconnexion" prefHeight="33.0" prefWidth="151.0" style="-fx-background-color: #9D2B2A;" text="Deconnexion" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic Bold" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets right="20.0" />
+                           </padding>
+                        </JFXButton>
+                        <Label layoutX="757.0" layoutY="5.0" onMouseClicked="#Load_Users" prefHeight="33.0" prefWidth="139.0" styleClass="btn" stylesheets="@../MyCss/CssLogin.css" text="Utilisateur" textFill="#962928">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="25.0" />
+                           </padding>
+                           <graphic>
+                              <FontAwesomeIconView fill="#909090" glyphName="USER" size="20" />
+                           </graphic>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="626.0" prefWidth="1349.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <HBox fx:id="GrandContenaire" layoutX="191.0" layoutY="192.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefHeight="647.0" prefWidth="217.0" style="-fx-background-color: #F3F3F3;" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <ImageView fitHeight="209.0" fitWidth="151.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/JosephineLogo3.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Accordion prefHeight="282.0" prefWidth="196.0">
+                                       <panes>
+                                          <TitledPane animated="false" style="-fx-background-color: #3D11C29;" text="Ajouter">
+                                             <font>
+                                                <Font name="Century Gothic" size="14.0" />
+                                             </font>
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="323.0" prefWidth="925.0">
+                                                   <children>
+                                                      <JFXButton layoutX="25.0" layoutY="51.0" onAction="#Ajouter_Nouveau" prefHeight="27.0" prefWidth="136.0" style="-fx-background-color: #DB1D2B;" text="Nouveau" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Century Gothic" size="14.0" />
+                                                         </font>
+                                                      </JFXButton>
+                                                      <JFXButton layoutX="26.0" layoutY="90.0" onAction="#Load_Visualiser" prefHeight="27.0" prefWidth="136.0" style="-fx-background-color: #DB1D2B;" text="Visualiser" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Century Gothic" size="14.0" />
+                                                         </font>
+                                                      </JFXButton>
+                                                      <MaterialIconView fill="WHITE" glyphName="GROUP_ADD" layoutX="35.0" layoutY="78.0" size="25" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </TitledPane>
+                                          <TitledPane animated="false" prefHeight="406.0" prefWidth="395.0" text="Rendez-vous">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" layoutY="58.0" prefHeight="28.0" prefWidth="171.0" style="-fx-background-color: #DB1D2B;" text="Passer un rendez-vous" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Century Gothic" size="14.0" />
+                                                         </font>
+                                                      </JFXButton>
+                                                      <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" layoutY="105.0" prefHeight="28.0" prefWidth="174.0" style="-fx-background-color: #DB1D2B;" text="Visualiser" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Century Gothic" size="14.0" />
+                                                         </font>
+                                                      </JFXButton>
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                             <font>
+                                                <Font name="Century Gothic" size="14.0" />
+                                             </font>
+                                          </TitledPane>
+                                          <TitledPane animated="false" prefHeight="410.0" prefWidth="406.0" text="Tous les rendez-vous">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="108.0" prefHeight="28.0" prefWidth="163.0" style="-fx-background-color: #DB1D2B;" text="Statistiques" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Century Gothic" size="14.0" />
+                                                         </font>
+                                                      </JFXButton>
+                                                      <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="62.0" prefHeight="28.0" prefWidth="158.0" style="-fx-background-color: #DB1D2B;" text="Rapports" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Century Gothic" size="14.0" />
+                                                         </font>
+                                                      </JFXButton>
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                             <font>
+                                                <Font name="Century Gothic" size="14.0" />
+                                             </font>
+                                          </TitledPane>
+                                       </panes>
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </Accordion>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </VBox>
+                              <AnchorPane fx:id="Contenaire" prefHeight="727.0" prefWidth="1157.0" style="-fx-background-color: #fff;" HBox.hgrow="ALWAYS" />
+                              <AnchorPane prefHeight="647.0" prefWidth="14.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="25.0" prefWidth="1012.0" style="-fx-background-color: #DB1D2B;" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

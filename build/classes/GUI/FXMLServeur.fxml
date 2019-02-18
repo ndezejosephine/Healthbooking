@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorServer" prefHeight="727.0" prefWidth="1157.0" stylesheets="@../MyCss/CssTab.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FXMLServeurController">
+   <children>
+      <JFXTabPane prefHeight="727.0" prefWidth="1157.0">
+         <tabs>
+            <Tab text="BASE DE DONNEES">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1157.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <AnchorPane layoutX="13.0" layoutY="76.0" prefHeight="528.0" prefWidth="560.0" style="-fx-background-color: #fff; -fx-border-color: #abaaaa;">
+                           <children>
+                              <Label layoutX="35.0" layoutY="102.0" text="Instance du Serveur" textFill="#999999">
+                                 <font>
+                                    <Font name="Century Gothic" size="13.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtInstance" focusColor="#e2e6e7" layoutX="208.0" layoutY="94.0" maxWidth="423.0" minWidth="260.0" prefHeight="31.0" prefWidth="338.0" promptText="Instance du Serveur" style="-fx-border-color: #E9E9E9; -fx-border-radius: 7em; -fx-background-color: #E2E6E7;" unFocusColor="#e2e6e7">
+                                 <font>
+                                    <Font name="Century Gothic" size="12.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="35.0" layoutY="160.0" text="Base des Donnees" textFill="#999999">
+                                 <font>
+                                    <Font name="Century Gothic" size="13.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtBD" focusColor="#e2e6e7" layoutX="208.0" layoutY="152.0" maxWidth="422.0" minWidth="260.0" prefHeight="31.0" prefWidth="339.0" promptText="Base des Donnees" style="-fx-border-color: #E9E9E9; -fx-border-radius: 7em; -fx-background-color: #E2E6E7;" unFocusColor="#e2e6e7">
+                                 <font>
+                                    <Font name="Century Gothic" size="12.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="35.0" layoutY="219.0" text="Nom d'utilisateur" textFill="#999999">
+                                 <font>
+                                    <Font name="Century Gothic" size="13.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtUser" focusColor="#e2e6e7" layoutX="208.0" layoutY="211.0" maxWidth="423.0" minWidth="260.0" prefHeight="31.0" prefWidth="339.0" promptText="Nom d'utilisateur" style="-fx-border-color: #E9E9E9; -fx-border-radius: 7em; -fx-background-color: #E2E6E7;" unFocusColor="#e2e6e7">
+                                 <font>
+                                    <Font name="Century Gothic" size="12.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="35.0" layoutY="279.0" text="Mot de passe" textFill="#999999">
+                                 <font>
+                                    <Font name="Century Gothic" size="13.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtPass" focusColor="#e2e6e7" layoutX="209.0" layoutY="280.0" maxWidth="422.0" minWidth="260.0" prefHeight="31.0" prefWidth="338.0" promptText="Mot de passe" style="-fx-border-color: #E9E9E9; -fx-border-radius: 7em; -fx-background-color: #E2E6E7;" unFocusColor="#e2e6e7">
+                                 <font>
+                                    <Font name="Century Gothic" size="12.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="35.0" layoutY="351.0" text="Confirmer le Mot de passe" textFill="#999999">
+                                 <font>
+                                    <Font name="Century Gothic" size="13.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtConfirmPass" focusColor="#e2e6e7" layoutX="208.0" layoutY="343.0" maxWidth="423.0" minWidth="260.0" prefHeight="31.0" prefWidth="338.0" promptText="Confirmer le Mot de passe" style="-fx-border-color: #E9E9E9; -fx-border-radius: 7em; -fx-background-color: #E2E6E7;" unFocusColor="#e2e6e7">
+                                 <font>
+                                    <Font name="Century Gothic" size="12.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXButton buttonType="RAISED" layoutX="391.0" layoutY="411.0" onAction="#Enregister_BD" prefHeight="32.0" prefWidth="154.0" style="-fx-background-color: #962928;" text="Enregistrer" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="16.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label layoutX="208.0" layoutY="31.0" text="Base de Donnees" textFill="#999999">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <FontAwesomeIconView fill="#abaaaa" glyphName="DATABASE" layoutX="159.0" layoutY="53.0" rotate="31.6" size="40" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="590.0" layoutY="75.0" prefHeight="529.0" prefWidth="551.0" style="-fx-border-color: #abaaaa;">
+                           <children>
+                              <AnchorPane layoutX="35.0" layoutY="94.0" prefHeight="103.0" prefWidth="502.0" style="-fx-background-color: #fff;">
+                                 <children>
+                                    <Label layoutX="130.0" layoutY="11.0" text="Sauvegarde" textFill="#a89f9f">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton layoutX="338.0" layoutY="75.0" prefHeight="28.0" prefWidth="119.0" style="-fx-background-color: #962928;" text="Sauvegarder" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="14.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXTextField focusColor="#f4f4f4" layoutX="8.0" layoutY="37.0" maxWidth="914.0" minWidth="219.0" prefHeight="33.0" prefWidth="449.0" promptText="       Chemin d'acces" style="-fx-border-color: #E9E9E9; -fx-background-color: #F4F4F4;" unFocusColor="#f4f4f4">
+                                       <font>
+                                          <Font name="Century Gothic" size="12.0" />
+                                       </font></JFXTextField>
+                                    <JFXButton layoutX="368.0" layoutY="39.0" prefHeight="29.0" prefWidth="92.0" style="-fx-background-color: #E2E6E7;" text="Parcourir" textFill="#abaaaa" AnchorPane.topAnchor="39.0">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="#abaaaa" glyphName="CHEVRON_DOWN" size="15" text="" wrappingWidth="15.0" />
+                                       </graphic>
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="12.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="35.0" layoutY="285.0" prefHeight="104.0" prefWidth="502.0" style="-fx-background-color: #fff;">
+                                 <children>
+                                    <Label layoutX="130.0" layoutY="11.0" text="Restauration" textFill="#a89f9f">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton layoutX="338.0" layoutY="76.0" prefHeight="28.0" prefWidth="119.0" style="-fx-background-color: #962928;" text="Restaurer" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="14.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXTextField focusColor="#f4f4f4" layoutX="8.0" layoutY="37.0" maxWidth="914.0" minWidth="219.0" prefHeight="33.0" prefWidth="449.0" promptText="       Chemin d'acces" style="-fx-border-color: #E9E9E9; -fx-background-color: #F4F4F4;" unFocusColor="#f4f4f4">
+                                       <font>
+                                          <Font name="Century Gothic" size="12.0" />
+                                       </font></JFXTextField>
+                                    <JFXButton layoutX="361.0" layoutY="39.0" prefHeight="29.0" prefWidth="94.0" style="-fx-background-color: #E2E6E7;" text="Parcourir" textFill="#abaaaa">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="#abaaaa" glyphName="CHEVRON_DOWN" size="15" text="" wrappingWidth="15.0" />
+                                       </graphic>
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="12.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </AnchorPane>
+                              <Label layoutX="99.0" layoutY="28.0" text="Sauvegarde et Restauration de la Base de Donnees" textFill="#999999">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <FontAwesomeIconView fill="#abaaaa" glyphName="SAVE" layoutX="53.0" layoutY="51.0" size="40" />
+                           </children>
+                        </AnchorPane>
+                        <JFXButton fx:id="BtnRetour1" layoutX="-1.0" layoutY="1.0" onAction="#BackButtonConfig" ripplerFill="#b90909" text="Retour" textFill="#a89f9f">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a89f9f" glyphName="ROTATE_LEFT" size="18" />
+                           </graphic>
+                           <font>
+                              <Font name="Century Gothic Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="MODEM">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #fff;" stylesheets="@../MyCss/CssTab.css">
+                     <children>
+                        <VBox layoutX="133.0" layoutY="61.0" prefHeight="555.0" prefWidth="823.0">
+                           <children>
+                              <AnchorPane prefHeight="557.0" prefWidth="852.0" style="-fx-background-color: #fff;">
+                                 <children>
+                                    <Label layoutX="207.0" layoutY="144.0" text="Port" textFill="#999999">
+                                       <font>
+                                          <Font name="Century Gothic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="port" focusColor="#e2e6e7" layoutX="380.0" layoutY="136.0" maxWidth="423.0" minWidth="260.0" prefHeight="31.0" prefWidth="338.0" promptText="Port COM" style="-fx-border-color: #E9E9E9; -fx-border-radius: 7em; -fx-background-color: #E2E6E7;" unFocusColor="#e2e6e7">
+                                       <font>
+                                          <Font name="Century Gothic" size="12.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <Label layoutX="207.0" layoutY="202.0" text="Modem Marque" textFill="#999999">
+                                       <font>
+                                          <Font name="Century Gothic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="modem" focusColor="#e2e6e7" layoutX="380.0" layoutY="194.0" maxWidth="422.0" minWidth="260.0" prefHeight="31.0" prefWidth="339.0" promptText="Nom du Modem" style="-fx-border-color: #E9E9E9; -fx-border-radius: 7em; -fx-background-color: #E2E6E7;" unFocusColor="#e2e6e7">
+                                       <font>
+                                          <Font name="Century Gothic" size="12.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <Label layoutX="207.0" layoutY="261.0" text="Bit de temporisation" textFill="#999999">
+                                       <font>
+                                          <Font name="Century Gothic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="bittem" focusColor="#e2e6e7" layoutX="380.0" layoutY="253.0" maxWidth="423.0" minWidth="260.0" prefHeight="31.0" prefWidth="339.0" promptText="Bit de temporisation" style="-fx-border-color: #E9E9E9; -fx-border-radius: 7em; -fx-background-color: #E2E6E7;" unFocusColor="#e2e6e7">
+                                       <font>
+                                          <Font name="Century Gothic" size="12.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <Label layoutX="207.0" layoutY="328.0" text="Centre Messagerie" textFill="#999999">
+                                       <font>
+                                          <Font name="Century Gothic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="centre" focusColor="#e2e6e7" layoutX="381.0" layoutY="322.0" maxWidth="422.0" minWidth="260.0" prefHeight="31.0" prefWidth="338.0" promptText="Mot de passe" style="-fx-border-color: #E9E9E9; -fx-border-radius: 7em; -fx-background-color: #E2E6E7;" unFocusColor="#e2e6e7">
+                                       <font>
+                                          <Font name="Century Gothic" size="12.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <Label layoutX="207.0" layoutY="393.0" text="Pin" textFill="#999999">
+                                       <font>
+                                          <Font name="Century Gothic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="pin" focusColor="#e2e6e7" layoutX="380.0" layoutY="385.0" maxWidth="423.0" minWidth="260.0" prefHeight="31.0" prefWidth="338.0" promptText="Pin" style="-fx-border-color: #E9E9E9; -fx-border-radius: 7em; -fx-background-color: #E2E6E7;" unFocusColor="#e2e6e7">
+                                       <font>
+                                          <Font name="Century Gothic" size="12.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXButton buttonType="RAISED" layoutX="572.0" layoutY="449.0" onAction="#Enregistrer_Messagerie" prefHeight="32.0" prefWidth="144.0" style="-fx-background-color: #962928;" text="Enregistrer" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <Label layoutX="420.0" layoutY="34.0" text="Modem" textFill="#a89f9f">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <FontAwesomeIconView fill="#abaaaa" glyphName="MOBILE_PHONE" layoutX="376.0" layoutY="70.0" rotate="31.5" size="80" text="" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                        <JFXButton fx:id="BtnRetour2" layoutX="-1.0" layoutY="2.0" onAction="#BackButtonConfig" ripplerFill="#b90909" text="Retour" textFill="#a89f9f">
+                           <graphic>
+                              <FontAwesomeIconView fill="#a89f9f" glyphName="ROTATE_LEFT" size="18" />
+                           </graphic>
+                           <font>
+                              <Font name="Century Gothic Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

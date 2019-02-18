@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="727.0" prefWidth="1157.0" style="-fx-background-color: #fff;" stylesheets="@../MyCss/CssTab.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FXMLUserController">
+    <children>
+        <JFXTabPane prefHeight="727.0" prefWidth="1157.0">
+            <tabs>
+                <Tab text=" AJOUTER UN UTILISATEUR">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1157.0" style="-fx-background-color: #fff;">
+                            <children>
+                                <AnchorPane layoutX="361.0" layoutY="21.0" prefHeight="296.0" prefWidth="389.0">
+                                    <children>
+                                        <Circle fx:id="Cercle" fill="WHITE" layoutX="195.0" layoutY="151.0" radius="100.0" stroke="#a4a4a4" strokeType="INSIDE" />
+                                        <JFXButton fx:id="Parcourir" layoutX="130.0" layoutY="267.0" onAction="#Choose_Picture" prefHeight="35.0" prefWidth="125.0" style="-fx-background-color: #D11C29;" text="Parcourir" textFill="WHITE">
+                                            <font>
+                                                <Font name="Century Gothic" size="12.0" />
+                                            </font>
+                                        </JFXButton>
+                                        <FontAwesomeIconView fill="WHITE" glyphName="FOLDER_OPEN" layoutX="140.0" layoutY="291.0" size="20" />
+                                        <Label layoutX="142.0" layoutY="25.0" prefHeight="17.0" prefWidth="121.0" text="Ajouter une photo" textFill="#999999">
+                                            <font>
+                                                <Font name="Century Gothic Bold" size="12.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </AnchorPane>
+                                <VBox layoutX="331.0" layoutY="330.0" prefHeight="333.0" prefWidth="465.0">
+                                    <children>
+                                        <JFXTextField fx:id="NomsUser" focusColor="#bfbfbf" labelFloat="true" maxWidth="461.0" minWidth="353.0" prefHeight="36.0" prefWidth="461.0" promptText="Noms d'Utilisateur">
+                                            <font>
+                                                <Font name="Century Gothic" size="14.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets bottom="15.0" top="15.0" />
+                                            </VBox.margin>
+                                        </JFXTextField>
+                              <JFXPasswordField fx:id="Pass" focusColor="#bfbfbf" labelFloat="true" promptText="Mot de passe">
+                                 <VBox.margin>
+                                    <Insets bottom="15.0" top="5.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Century Gothic" size="14.0" />
+                                 </font>
+                              </JFXPasswordField>
+                                        <JFXTextField fx:id="Contacts" focusColor="#bfbfbf" labelFloat="true" layoutX="10.0" layoutY="46.0" maxWidth="461.0" minWidth="353.0" prefHeight="36.0" prefWidth="461.0" promptText="Contacts(+243)">
+                                            <font>
+                                                <Font name="Century Gothic" size="14.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets bottom="15.0" top="5.0" />
+                                            </VBox.margin>
+                                        </JFXTextField>
+                                        <HBox prefHeight="17.0" prefWidth="432.0">
+                                            <children>
+                                                <JFXCheckBox fx:id="RadioAdmin" checkedColor="#962928" prefHeight="15.0" prefWidth="439.0" text="Enregistrer l'utilisateur en tant qu'Administrateur" textFill="#999999">
+                                                    <HBox.margin>
+                                                        <Insets left="20.0" />
+                                                    </HBox.margin>
+                                                    <font>
+                                                        <Font name="Century Gothic Bold" size="12.0" />
+                                                    </font>
+                                                </JFXCheckBox>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets top="5.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#Add_User" prefHeight="33.0" prefWidth="151.0" style="-fx-background-color: #9D2B2A;" text="Enregistrer" textFill="WHITE">
+                                            <font>
+                                                <Font name="Century Gothic Bold" size="16.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="300.0" top="50.0" />
+                                            </VBox.margin>
+                                        </JFXButton>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="DETAILS UTILISATEURS">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #fff;" stylesheets="@../MyCss/CssTab.css">
+                            <children>
+                                <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="131.0" prefHeight="44.0" prefWidth="835.0" style="-fx-background-color: #fff;">
+                                    <children>
+                                        <JFXTextField focusColor="#cdcdcd" maxWidth="1116.0" minWidth="146.0" prefHeight="47.0" prefWidth="776.0" promptText="Rechercher" style="-fx-background-color: #CDCDCD;" unFocusColor="#cdcdcd">
+                                            <HBox.margin>
+                                                <Insets top="10.0" />
+                                            </HBox.margin>
+                                            <font>
+                                                <Font name="Century Gothic" size="16.0" />
+                                            </font>
+                                        </JFXTextField>
+                              <JFXButton buttonType="RAISED" prefHeight="37.0" prefWidth="52.0" style="-fx-background-color: #D11C29;" text="." textFill="#ae5d5d">
+                                 <graphic>
+                                              <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" size="2em" textAlignment="CENTER" />
+                                 </graphic>
+                                 <HBox.margin>
+                                    <Insets top="8.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                                    </children>
+                                </HBox>
+                                <TableView layoutX="20.0" layoutY="192.0" prefHeight="445.0" prefWidth="902.0">
+                                    <columns>
+                                        <TableColumn prefWidth="75.0" text="C1" />
+                                        <TableColumn prefWidth="75.0" text="C2" />
+                                    </columns>
+                                </TableView>
+                                <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="955.0" layoutY="192.0" prefHeight="33.0" prefWidth="126.0" style="-fx-background-color: #9D2B2A;" text="Editer" textFill="WHITE">
+                                    <font>
+                                        <Font name="Century Gothic" size="14.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets right="20.0" />
+                                    </padding>
+                                </JFXButton>
+                                <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="958.0" layoutY="253.0" prefHeight="33.0" prefWidth="126.0" style="-fx-background-color: #9D2B2A;" text="Supprimer" textFill="WHITE">
+                                    <font>
+                                        <Font name="Century Gothic" size="14.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="15.0" right="20.0" />
+                                    </padding>
+                                </JFXButton>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </JFXTabPane>
+    </children>
+</AnchorPane>

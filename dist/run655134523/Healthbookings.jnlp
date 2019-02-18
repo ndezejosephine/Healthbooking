@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Healthbookings.jnlp">
+  <information>
+    <title>Healthbookings</title>
+    <vendor>NDEZE</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Healthbookings.jar" size="7915307" download="eager" />
+    <jar href="lib\batik-awt-util.jar" size="403287" download="eager" />
+    <jar href="lib\controlsfx-8.40.14.jar" size="1215643" download="eager" />
+    <jar href="lib\controlsfx-samples-8.40.14.jar" size="725707" download="eager" />
+    <jar href="lib\fontawesomefx-8.0.10_1.jar" size="108930" download="eager" />
+    <jar href="lib\fontawesomefx-glyphsbrowser-all-1.0.jar" size="1662483" download="eager" />
+    <jar href="lib\fxsampler-1.0.10.jar" size="30882" download="eager" />
+    <jar href="lib\javax.persistence-api-2.2.jar" size="164556" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2142035" download="eager" />
+    <jar href="lib\jna-3.5.1.jar" size="692603" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.13-bin.jar" size="753542" download="eager" />
+    <jar href="lib\platform-3.5.1.jar" size="952411" download="eager" />
+    <jar href="lib\rs2xml.jar" size="171578" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Healthbookings" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="healthbooking.HealthBooking"  name="Healthbookings" />
+  <update check="always"/>
+</jnlp>

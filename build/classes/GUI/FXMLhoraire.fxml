@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="727.0" prefWidth="1157.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FXMLhoraireController">
+   <children>
+      <AnchorPane prefHeight="41.0" prefWidth="1157.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="111.0" prefHeight="41.0" prefWidth="620.0" text="Horaire de la semaine" textFill="#a5a5a5">
+               <font>
+                  <Font name="Century Gothic Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="35.0" />
+               </padding>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="40.0" />
+         </padding>
+      </AnchorPane>
+      <VBox layoutX="589.0" layoutY="40.0" prefHeight="648.0" prefWidth="540.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="39.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Label prefHeight="41.0" prefWidth="280.0" text="Affecter un horaire à un docteur" textFill="#962928">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="130.0" />
+               </VBox.margin>
+            </Label>
+            <AnchorPane prefHeight="147.0" prefWidth="515.0">
+               <children>
+                  <JFXComboBox layoutY="23.0" prefHeight="25.0" prefWidth="427.0" promptText="Selectionner un Docteur" />
+                  <JFXComboBox layoutY="78.0" prefHeight="25.0" prefWidth="427.0" promptText="Selectionner  les jours de Consultation" />
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" top="50.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="447.0" prefWidth="531.0">
+               <children>
+                  <VBox prefHeight="377.0" prefWidth="503.0">
+                     <children>
+                        <HBox prefHeight="41.0" prefWidth="469.0" style="-fx-background-color: #9D2B2A;">
+                           <children>
+                              <Label prefHeight="45.0" prefWidth="82.0" text="JOURS" textFill="#a5a5a5">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="44.0" prefWidth="129.0" text="HEURE DEBUT" textFill="#a5a5a5">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="100.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label prefHeight="43.0" prefWidth="82.0" text="HEURE FIN" textFill="#a5a5a5">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="35.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </HBox>
+                        <HBox minHeight="-Infinity" prefHeight="332.0" prefWidth="503.0" style="-fx-background-color: #fff;">
+                           <children>
+                              <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="340.0" prefWidth="167.0">
+                                 <children>
+                                    <JFXCheckBox checkedColor="#962928" disable="true" prefHeight="39.0" prefWidth="82.0" text="Lundi" textFill="#a5a5a5">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </JFXCheckBox>
+                                    <JFXCheckBox checkedColor="#962928" disable="true" prefHeight="39.0" prefWidth="82.0" text="Mardi" textFill="#a5a5a5">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </JFXCheckBox>
+                                    <JFXCheckBox checkedColor="#962928" disable="true" prefHeight="39.0" prefWidth="82.0" text="Mercredi" textFill="#a5a5a5">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </JFXCheckBox>
+                                    <JFXCheckBox checkedColor="#962928" disable="true" prefHeight="39.0" prefWidth="82.0" text="Jeudi" textFill="#a5a5a5">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </JFXCheckBox>
+                                    <JFXCheckBox checkedColor="#962928" disable="true" prefHeight="39.0" prefWidth="82.0" text="Vendredi" textFill="#a5a5a5">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </JFXCheckBox>
+                                    <JFXCheckBox checkedColor="#962928" disable="true" prefHeight="39.0" prefWidth="82.0" text="Samedi" textFill="#a5a5a5">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </JFXCheckBox>
+                                    <JFXCheckBox checkedColor="#962928" disable="true" layoutX="10.0" layoutY="205.0" prefHeight="39.0" prefWidth="82.0" text="Dimanche" textFill="#a5a5a5">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </JFXCheckBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="334.0" prefWidth="327.0">
+                                 <children>
+                                    <HBox prefHeight="36.0" prefWidth="281.0">
+                                       <children>
+                                          <Label layoutX="230.0" layoutY="20.0" prefHeight="29.0" prefWidth="28.0" text="De">
+                                             <font>
+                                                <Font name="Century Gothic" size="16.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="5.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <JFXTextField fx:id="Contacts" focusColor="#bfbfbf" labelFloat="true" maxWidth="200.0" minHeight="-Infinity" minWidth="103.0" prefHeight="36.0" prefWidth="103.0">
+                                             <font>
+                                                <Font name="Century Gothic" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" right="10.0" />
+                                             </HBox.margin>
+                                          </JFXTextField>
+                                          <Label prefHeight="29.0" prefWidth="11.0" text="à">
+                                             <font>
+                                                <Font name="Century Gothic" size="16.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="10.0" right="10.0" top="10.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <JFXTextField fx:id="Contacts2" focusColor="#bfbfbf" labelFloat="true" maxWidth="200.0" minHeight="-Infinity" minWidth="88.0" prefHeight="36.0" prefWidth="88.0">
+                                             <font>
+                                                <Font name="Century Gothic" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </JFXTextField>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox layoutX="10.0" layoutY="10.0" prefHeight="36.0" prefWidth="281.0">
+                                       <children>
+                                          <Label layoutX="230.0" layoutY="20.0" prefHeight="29.0" prefWidth="28.0" text="De">
+                                             <font>
+                                                <Font name="Century Gothic" size="16.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="5.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <JFXTextField fx:id="Contacts1" focusColor="#bfbfbf" labelFloat="true" maxWidth="200.0" minHeight="-Infinity" minWidth="103.0" prefHeight="36.0" prefWidth="103.0">
+                                             <font>
+                                                <Font name="Century Gothic" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" right="10.0" />
+                                             </HBox.margin>
+                                          </JFXTextField>
+                                          <Label prefHeight="29.0" prefWidth="11.0" text="à">
+                                             <font>
+                                                <Font name="Century Gothic" size="16.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="10.0" right="10.0" top="10.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <JFXTextField fx:id="Contacts21" focusColor="#bfbfbf" labelFloat="true" maxWidth="200.0" minHeight="-Infinity" minWidth="88.0" prefHeight="36.0" prefWidth="88.0">
+                                             <font>
+                                                <Font name="Century Gothic" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </JFXTextField>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox layoutX="10.0" layoutY="46.0" prefHeight="36.0" prefWidth="281.0">
+                                       <children>
+                                          <Label layoutX="230.0" layoutY="20.0" prefHeight="29.0" prefWidth="28.0" text="De">
+                                             <font>
+                                                <Font name="Century Gothic" size="16.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="5.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <JFXTextField fx:id="Contacts11" focusColor="#bfbfbf" labelFloat="true" maxWidth="200.0" minHeight="-Infinity" minWidth="103.0" prefHeight="36.0" prefWidth="103.0">
+                                             <font>
+                                                <Font name="Century Gothic" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" right="10.0" />
+                                             </HBox.margin>
+                                          </JFXTextField>
+                                          <Label prefHeight="29.0" prefWidth="11.0" text="à">
+                                             <font>
+                                                <Font name="Century Gothic" size="16.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="10.0" right="10.0" top="10.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <JFXTextField fx:id="Contacts211" focusColor="#bfbfbf" labelFloat="true" maxWidth="200.0" minHeight="-Infinity" minWidth="88.0" prefHeight="36.0" prefWidth="88.0">
+                                             <font>
+                                                <Font name="Century Gothic" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </JFXTextField>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox layoutX="10.0" layoutY="82.0" prefHeight="36.0" prefWidth="281.0">
+                                       <children>
+                                          <Label layoutX="230.0" layoutY="20.0" prefHeight="29.0" prefWidth="28.0" text="De">
+                                             <font>
+                                                <Font name="Century Gothic" size="16.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="5.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <JFXTextField fx:id="Contacts111" focusColor="#bfbfbf" labelFloat="true" maxWidth="200.0" minHeight="-Infinity" minWidth="103.0" prefHeight="36.0" prefWidth="103.0">
+                                             <font>
+                                                <Font name="Century Gothic" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" right="10.0" />
+                                             </HBox.margin>
+                                          </JFXTextField>
+                                          <Label prefHeight="29.0" prefWidth="11.0" text="à">
+                                             <font>
+                                                <Font name="Century Gothic" size="16.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="10.0" right="10.0" top="10.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <JFXTextField fx:id="Contacts2111" focusColor="#bfbfbf" labelFloat="true" maxWidth="200.0" minHeight="-Infinity" minWidth="88.0" prefHeight="36.0" prefWidth="88.0">
+                                             <font>
+                                                <Font name="Century Gothic" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </JFXTextField>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox layoutX="10.0" layoutY="118.0" prefHeight="36.0" prefWidth="281.0">
+                                       <children>
+                                          <Label layoutX="230.0" layoutY="20.0" prefHeight="29.0" prefWidth="28.0" text="De">
+                                             <font>
+                                                <Font name="Century Gothic" size="16.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="5.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <JFXTextField fx:id="Contacts1111" focusColor="#bfbfbf" labelFloat="true" maxWidth="200.0" minHeight="-Infinity" minWidth="103.0" prefHeight="36.0" prefWidth="103.0">
+                                             <font>
+                                                <Font name="Century Gothic" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" right="10.0" />
+                                             </HBox.margin>
+                                          </JFXTextField>
+                                          <Label prefHeight="29.0" prefWidth="11.0" text="à">
+                                             <font>
+                                                <Font name="Century Gothic" size="16.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="10.0" right="10.0" top="10.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <JFXTextField fx:id="Contacts21111" focusColor="#bfbfbf" labelFloat="true" maxWidth="200.0" minHeight="-Infinity" minWidth="88.0" prefHeight="36.0" prefWidth="88.0">
+                                             <font>
+                                                <Font name="Century Gothic" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </JFXTextField>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox layoutX="10.0" layoutY="154.0" prefHeight="36.0" prefWidth="281.0">
+                                       <children>
+                                          <Label layoutX="230.0" layoutY="20.0" prefHeight="29.0" prefWidth="28.0" text="De">
+                                             <font>
+                                                <Font name="Century Gothic" size="16.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="5.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <JFXTextField fx:id="Contacts11111" focusColor="#bfbfbf" labelFloat="true" maxWidth="200.0" minHeight="-Infinity" minWidth="103.0" prefHeight="36.0" prefWidth="103.0">
+                                             <font>
+                                                <Font name="Century Gothic" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" right="10.0" />
+                                             </HBox.margin>
+                                          </JFXTextField>
+                                          <Label prefHeight="29.0" prefWidth="11.0" text="à">
+                                             <font>
+                                                <Font name="Century Gothic" size="16.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="10.0" right="10.0" top="10.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <JFXTextField fx:id="Contacts211111" focusColor="#bfbfbf" labelFloat="true" maxWidth="200.0" minHeight="-Infinity" minWidth="88.0" prefHeight="36.0" prefWidth="88.0">
+                                             <font>
+                                                <Font name="Century Gothic" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </JFXTextField>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox layoutX="10.0" layoutY="190.0" prefHeight="36.0" prefWidth="281.0">
+                                       <children>
+                                          <Label layoutX="230.0" layoutY="20.0" prefHeight="29.0" prefWidth="28.0" text="De">
+                                             <font>
+                                                <Font name="Century Gothic" size="16.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="5.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <JFXTextField fx:id="Contacts111111" focusColor="#bfbfbf" labelFloat="true" maxWidth="200.0" minHeight="-Infinity" minWidth="103.0" prefHeight="36.0" prefWidth="103.0">
+                                             <font>
+                                                <Font name="Century Gothic" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" right="10.0" />
+                                             </HBox.margin>
+                                          </JFXTextField>
+                                          <Label prefHeight="29.0" prefWidth="11.0" text="à">
+                                             <font>
+                                                <Font name="Century Gothic" size="16.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="10.0" right="10.0" top="10.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <JFXTextField fx:id="Contacts2111111" focusColor="#bfbfbf" labelFloat="true" maxWidth="200.0" minHeight="-Infinity" minWidth="88.0" prefHeight="36.0" prefWidth="88.0">
+                                             <font>
+                                                <Font name="Century Gothic" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </JFXTextField>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="313.0" layoutY="389.0" prefHeight="32.0" prefWidth="128.0" style="-fx-background-color: #9D2B2A;" text="Affecter" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <effect>
+                  <DropShadow color="#c9c9c9" />
+               </effect>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+         </children>
+         <effect>
+            <DropShadow color="#dddddd" />
+         </effect>
+      </VBox>
+      <VBox layoutY="169.0" prefHeight="200.0" prefWidth="100.0" />
+      <VBox layoutX="37.0" layoutY="40.0" prefHeight="648.0" prefWidth="503.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="37.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <VBox prefHeight="84.0" prefWidth="408.0">
+               <children>
+                  <Label prefHeight="22.0" prefWidth="546.0" style="-fx-background-color: #CDCDCD;" text="Lundi 12 /01/ 2019" textFill="#8e2625">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="62.0" prefWidth="388.0" text="Docteur &#10;de 8h à 16H" textFill="#434343">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#949494" />
+                     </effect>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox prefHeight="81.0" prefWidth="408.0" styleClass="card" stylesheets="@../MyCss/styles.css">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="484.0" style="-fx-background-color: #CDCDCD;" text="Mardi 13 /01/ 2019" textFill="#8e2625">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="62.0" prefWidth="385.0" text="Docteur 2 &#10;de 8h à 13H &#10;" textFill="#434343">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#949494" />
+                     </effect>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox prefHeight="81.0" prefWidth="166.0" styleClass="card" stylesheets="@../MyCss/styles.css">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="502.0" style="-fx-background-color: #CDCDCD;" text="Mercredi 14 /01/ 2019" textFill="#8e2625">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="66.0" prefWidth="390.0" text="Docteur 3&#10;de 8h à 16H" textFill="#434343">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#949494" />
+                     </effect>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox prefHeight="81.0" prefWidth="142.0" styleClass="card" stylesheets="@../MyCss/styles.css">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="504.0" style="-fx-background-color: #CDCDCD;" text="Jeudi 15 /01/ 2019" textFill="#8e2625">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="66.0" prefWidth="423.0" text="Docteur 4&#10;de 8h à 16H" textFill="#434343">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#949494" />
+                     </effect>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox prefHeight="81.0" prefWidth="160.0" styleClass="card" stylesheets="@../MyCss/styles.css">
+               <children>
+                  <Label prefHeight="19.0" prefWidth="563.0" style="-fx-background-color: #CDCDCD;" text="vendredi 15 /01/ 2019" textFill="#8e2625">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="66.0" prefWidth="446.0" text="Docteur 5&#10;de 8h à 16H&#10;" textFill="#434343">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#949494" />
+                     </effect>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox prefHeight="81.0" prefWidth="151.0" styleClass="card" stylesheets="@../MyCss/styles.css">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="504.0" style="-fx-background-color: #CDCDCD;" text="Samedi 16 /01/ 2019" textFill="#8e2625">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="66.0" prefWidth="418.0" text="Docteur 5&#10;de 8h à 16H" textFill="#434343">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#949494" />
+                     </effect>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox prefHeight="81.0" prefWidth="167.0" styleClass="card" stylesheets="@../MyCss/styles.css">
+               <children>
+                  <Label prefHeight="19.0" prefWidth="968.0" style="-fx-background-color: #CDCDCD;" text="Dimanche 16 /01/ 2019" textFill="#8e2625">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="66.0" prefWidth="394.0" text="Docteur 5&#10;de 8h à 16H" textFill="#434343">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#949494" />
+                     </effect>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+         <effect>
+            <DropShadow color="#dddddd" />
+         </effect>
+      </VBox>
+      <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="273.0" layoutY="689.0" prefHeight="32.0" prefWidth="141.0" style="-fx-background-color: #9D2B2A;" text="Historique" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="117.0" layoutY="688.0" prefHeight="32.0" prefWidth="128.0" style="-fx-background-color: #9D2B2A;" text="Imprimer" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

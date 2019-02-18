@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="727.0" prefWidth="1157.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FXMLStatistiqueController">
+   <children>
+      <HBox layoutX="184.0" layoutY="422.0" prefHeight="258.0" prefWidth="811.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="162.0">
+         <effect>
+            <DropShadow color="#949494" />
+         </effect>
+         <children>
+            <AnchorPane prefHeight="379.0" prefWidth="363.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ProgressIndicator layoutX="27.0" layoutY="19.0" prefHeight="327.0" prefWidth="319.0" progress="0.79" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="39.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="379.0" prefWidth="363.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ProgressIndicator layoutX="6.0" layoutY="-2.0" prefHeight="342.0" prefWidth="376.0" progress="0.1" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="39.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="373.0" layoutY="10.0" prefHeight="379.0" prefWidth="363.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ProgressIndicator layoutX="201.0" layoutY="161.0" progress="0.41" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="39.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

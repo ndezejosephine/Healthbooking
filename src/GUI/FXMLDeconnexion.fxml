@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="391.0" prefWidth="1118.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FXMLDeconnexionController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="AnchorpaneDeconnexion" layoutX="790.0" prefHeight="391.0" prefWidth="326.0" style="-fx-background-color: #fff;">
+          <children>
+              <ImageView fitHeight="220.0" fitWidth="356.0" layoutX="51.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@../Images/JosephineLogo.png" />
+                  </image>
+              </ImageView>
+            <JFXButton fx:id="BtnDeconnexion" buttonType="RAISED" layoutX="36.0" layoutY="331.0" onAction="#Load_Login" prefHeight="34.0" prefWidth="131.0" style="-fx-background-color: #9D2B2A;" text="Deconnexion" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="175.0" layoutY="331.0" onAction="#Hide_Deconnexion" prefHeight="34.0" prefWidth="94.0" text="Annuler" textFill="#797878">
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="96.0" layoutY="238.0" text="Noms" textFill="#797878">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="98.0" layoutY="265.0" text="type d'utilisateur" textFill="#797878">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Label>
+            
+                </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
